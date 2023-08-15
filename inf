@@ -1,0 +1,41 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Showcaser hub", "DarkTheme")
+
+if game.PlaceId == 2788229376 then
+
+	--main
+	local Main = Window:NewTab("Main")
+	local MainSection = Main:NewSection("Main")
+
+	MainSection:NewButton("Speed tool", "Gives you Speed tool and Fake Macro tool", function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/XiqsUXHj", true))()
+	end)
+
+
+	MainSection:NewButton("Q aimlock tool", "Gives you a Q tool that aimlock’s in player’s when clicked", function()
+		loadstring(game.HttpGet("https://pastebin.com/raw/WqPxv3YD"))();
+	end)
+
+
+	MainSection:NewButton("CrispyGo Faded", "Execute’s CrispyGo Faded script(V to toggle)", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded-Grid/main/YesEpic", true))()
+	end)
+
+	MainSection:NewButton("KeyBoarf-FE", "Execute’s the Keyboard script(For mobile only)", function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/XiqsUXHj", true))()
+	end)
+end
+
+	local Credits = Window:NewTab("Credits")
+	local CreditsSection = Credits:NewSection("Credit’s for script that i used in the Hub.")
+
+	CreditsSection:NewButton("Credits for owner of the speed tool and Q tool", "", function()
+
+	end)
+
+	CreditsSection:NewButton("Credits for CrispyGo for the CrispyGo Faded script", "", function()
+	
+	end)
+CreditsSection:NewButton("Credits for owner of the KeyBoard-Fe script", "", function()
+	
+end)
